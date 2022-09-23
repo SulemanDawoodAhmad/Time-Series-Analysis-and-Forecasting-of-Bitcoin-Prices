@@ -3,7 +3,7 @@
 #Load required and relevant packages 
 
 library(pacman)
-pacman::p_load(data.table, ggplot2, DBI, broom, sandwich, lmtest, estimatr, lubridate, dplyr, tseries, scales, forecast, TSA, vars, lattice)
+p_load(data.table, ggplot2, DBI, broom, sandwich, lmtest, estimatr, lubridate, dplyr, tseries, scales, forecast, TSA, vars, lattice)
 
 #1. Daily Bitcoin Prices-1st Jan, 2014 to 8th Oct, 2021 [Source:https://www.investing.com/crypto/bitcoin/historical-data]
 bitcoin_prices <- as.data.table(read.table("Bitcoin Data.csv", header=TRUE, sep=","))
